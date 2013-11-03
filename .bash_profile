@@ -1,5 +1,8 @@
 # Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH"
+if !(echo "$PATH" | egrep -q "$HOME/bin") ; then
+    export PATH="$HOME/bin:$PATH"
+fi
+
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
