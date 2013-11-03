@@ -1,4 +1,2 @@
 # Add RVM to PATH for scripting
-if !(echo "$PATH" | egrep -q "$HOME/.rvm/bin") ; then
-    export PATH=$PATH:$HOME/.rvm/bin
-fi
+export PATH=$PATH:$HOME/.rvm/bin
