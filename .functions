@@ -311,3 +311,8 @@ function np() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX
 }
+
+# show PATH in more readable form
+function printpath() {
+    echo $PATH | awk -F : '{print "PATH is set to"} {for (i=1;i<=NF;i++) {print "["i"]",$i}}'
+}
