@@ -27,6 +27,9 @@ brew tap homebrew/dupes
 brew install homebrew/dupes/grep
 brew tap josegonzalez/homebrew-php
 brew install php54
+brew install gnu-tar
+brew install ruby
+brew install proctools
 
 # These two formulae didn’t work well last time I tried them:
 #brew install homebrew/dupes/vim
@@ -34,15 +37,21 @@ brew install php54
 
 # Install other useful binaries
 brew install ack
+brew install ant
+brew install bash-completion
+brew install composer
 #brew install exiv2
 brew install git
-#brew install imagemagick
+brew install imagemagick
 brew install lynx
 brew install node
 brew install pigz
 brew install rename
 # brew install rhino
+brew install ssh-copy-id
+brew install tig
 brew install tree
+brew install watch
 brew install webkit2png
 # brew install zopfli
 
