@@ -31,3 +31,6 @@ cd; curl -#L https://github.com/genjusz/dotfiles/tarball/master | tar -xzv --str
 ```
 
 To update later on, just run that command again.
+
+### Credits
+Based on https://github.com/mathiasbynens/dotfiles
