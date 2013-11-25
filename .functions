@@ -316,3 +316,8 @@ function tre() {
 function printpath() {
     echo $PATH | awk -F : '{print "PATH is set to"} {for (i=1;i<=NF;i++) {print "["i"]",$i}}'
 }
+
+# Automaticly backup your config before editig it via default editor
+conf() { 
+    [ "$1" != "" ] && cp "$1" "$1".bak-`date +%d%m%y`; $EDITOR "$1"; 
+}
