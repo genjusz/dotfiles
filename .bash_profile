@@ -35,5 +35,9 @@ complete -W "NSGlobalDomain" defaults
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter Chrome Firefox Tweetbot" killall
 
+# Add ssh sftp scp tab completion for hosts from ~/.ssh/known_hosts
+HOSTLIST=$(echo `cat ~/.ssh/known_hosts | cut -f 1 -d ' ' | sed -e s/,.*//g | uniq | cut -f 1 -d ':' | cut -f 1 -d ']' | cut -d '[' -f2`;)
+complete -W "${HOSTLIST}" ssh sftp scp
+
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
