@@ -162,3 +162,6 @@ command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.e
 
 # Alias for MacDown App
 alias macdown="open -a MacDown $1"
+
+# Alias for thefuck
+alias fuck='$(thefuck $(fc -ln -1))'
