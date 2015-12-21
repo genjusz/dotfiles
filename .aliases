@@ -165,3 +165,8 @@ alias macdown="open -a MacDown $1"
 
 # Alias for thefuck
 alias fuck='$(thefuck $(fc -ln -1))'
+
+# nutricia-platform
+alias bk-console='APP_NAME=bebiklub app/console'
+alias bv-console='APP_NAME=bobovita app/console'
+alias bp-console='APP_NAME=bebiprogram app/console'
